@@ -16,6 +16,7 @@ const CouponCode = ({ code, discount, minAmount, note }: CouponCodeProps) => {
     navigator.clipboard.writeText(code);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+    window.open(AFFILIATE_LINK, "_blank", "noopener,noreferrer");
   };
 
   return (
