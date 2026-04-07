@@ -48,6 +48,55 @@ const HomePage = () => {
       </section>
 
       <main className="container mx-auto py-10">
+        {/* 현재 사용 가능한 할인코드 */}
+        <section className="mb-14">
+          <h2 className="section-title">📋 현재 사용 가능한 할인코드 (2026년 4월)</h2>
+          <p className="text-sm text-muted-foreground mb-6">아래 코드는 2026년 4월 기준이며, 매월 말일에 만료 후 새 코드로 갱신됩니다. 코드를 클릭하면 복사됩니다.</p>
+          
+          <div className="space-y-4">
+            <CouponCode code="PACKMKTP5000" discount="5,000원 할인" minAmount="15만 원" note="해외 투어·티켓 전용" />
+            <CouponCode code="2MKTPCH5000" discount="5,000원 할인" minAmount="15만 원" note="해외 투어·티켓 전용" />
+            <CouponCode code="PACKMPT3000" discount="3,000원 할인" minAmount="10만 원" note="해외 투어·티켓 전용 · 선착순" />
+            <CouponCode code="PACKMKTP1000" discount="1,000원 할인" minAmount="5만 원" note="상시 쿠폰 · 해외 투어·티켓 전용" />
+            <CouponCode code="MKTPCH1000" discount="1,000원 할인" minAmount="5만 원" note="상시 쿠폰 · 해외 투어·티켓 전용" />
+          </div>
+
+          <div className="info-card mt-6 border-l-4 border-warning">
+            <h3 className="font-bold mb-2">⚠ 공통 유의사항</h3>
+            <ul className="text-sm text-muted-foreground space-y-1">
+              <li>• 모든 할인코드는 4월 30일까지 등록 가능</li>
+              <li>• 코드 등록 시 쿠폰은 7일 이내 사용 필수</li>
+              <li>• 유효기간 경과 시 동일 코드 재등록 불가</li>
+              <li>• 다른 할인쿠폰과 중복 사용 불가 (1건당 1쿠폰)</li>
+              <li>• 여행자보험, 렌터카, 편도 항공권에는 적용 불가</li>
+              <li>• 예산 소진 시 조기 종료 가능</li>
+            </ul>
+          </div>
+        </section>
+
+        {/* 할인 중복 적용 공식 */}
+        <section className="bg-primary/5 rounded-xl p-6 sm:p-8 mb-14 border border-primary/10">
+          <h2 className="text-xl sm:text-2xl font-bold text-primary mb-4">💡 할인 극대화 공식 (중복 적용)</h2>
+          <div className="bg-card rounded-lg p-4 sm:p-6 text-center mb-4">
+            <p className="text-sm sm:text-lg font-bold">
+              <span className="badge-discount mr-1">할인코드</span> + 
+              <span className="badge-info mx-1">카드 즉시 할인</span> + 
+              <span className="badge-discount mx-1">간편결제 할인</span> = 
+              <span className="text-primary font-black ml-1">최대 중복 혜택!</span>
+            </p>
+          </div>
+          <ul className="text-sm text-muted-foreground space-y-2">
+            <li>✅ 할인코드와 카드 할인은 별개로 중복 적용됨</li>
+            <li>✅ 간편결제(카카오페이·토스페이 등)와 카드 할인도 동시 적용 가능</li>
+            <li>⚠️ 할인쿠폰은 1건당 1개만 적용 (가장 할인이 큰 쿠폰 자동 선택)</li>
+          </ul>
+          <div className="text-center mt-6">
+            <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow" className="cta-button">
+              할인 중복 적용하고 예약하기 →
+            </a>
+          </div>
+        </section>
+
         {/* 할인 4종류 소개 */}
         <section className="mb-14">
           <h2 className="section-title">마이리얼트립 할인의 4가지 종류</h2>
