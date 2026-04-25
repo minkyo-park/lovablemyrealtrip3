@@ -19,17 +19,28 @@ const HomePage = () => {
     <>
       <Helmet>
         <title>마이리얼트립 할인쿠폰</title>
-        <meta name="description" content="2026년 4월 마이리얼트립 할인쿠폰, 할인코드 PACKMKTP5000 등 최신 코드와 카드사별 최대 15% 할인, 간편결제 할인까지 한눈에 비교! 중복 할인 극대화 방법을 확인하세요." />
+        <meta name="description" content="매달 갱신되는 마이리얼트립 5월 할인쿠폰 정보. 적용 가능한 상품, 사용 조건, 유효기간까지 할인코드별로 꼼꼼하게 정리했습니다. 5월 여행 경비 확 줄이는 마이리얼트립 쿠폰, 여기서 받아가세요." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="마이리얼트립 할인쿠폰" />
+        <meta property="og:description" content="매달 갱신되는 마이리얼트립 5월 할인쿠폰 정보. 적용 가능한 상품, 사용 조건, 유효기간까지 할인코드별로 꼼꼼하게 정리했습니다. 5월 여행 경비 확 줄이는 마이리얼트립 쿠폰, 여기서 받아가세요." />
+        <meta property="og:url" content="https://mrt.couponmonster.co.kr/" />
+        <meta property="og:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
+        <meta property="og:site_name" content="마이리얼트립 할인쿠폰" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="마이리얼트립 할인쿠폰" />
+        <meta name="twitter:description" content="매달 갱신되는 마이리얼트립 5월 할인쿠폰 정보. 적용 가능한 상품, 사용 조건, 유효기간까지 할인코드별로 꼼꼼하게 정리했습니다." />
+        <meta name="twitter:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "마이리얼트립 할인쿠폰 총정리 2026년 4월",
-          "description": "마이리얼트립 할인코드, 쿠폰, 카드할인, 프로모션 정보를 한 곳에서",
-          "datePublished": "2026-04-01",
-          "dateModified": "2026-04-07",
-          "author": { "@type": "Organization", "name": "쿠폰몬스터" },
-          "publisher": { "@type": "Organization", "name": "쿠폰몬스터", "url": "https://mrt.couponmonster.co.kr" }
+          "headline": "마이리얼트립 할인쿠폰",
+          "description": "매달 갱신되는 마이리얼트립 5월 할인쿠폰 정보. 적용 가능한 상품, 사용 조건, 유효기간까지 할인코드별로 꼼꼼하게 정리했습니다.",
+          "datePublished": "2026-05-01",
+          "dateModified": "2026-05-07",
+          "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" },
+          "publisher": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰", "url": "https://mrt.couponmonster.co.kr" }
         })}</script>
       </Helmet>
 
@@ -39,7 +50,7 @@ const HomePage = () => {
         <div className="absolute inset-0 flex items-center justify-center z-10">
           <div className="text-center px-4">
             <h1 className="text-2xl sm:text-4xl md:text-5xl font-black mb-3 drop-shadow-lg">마이리얼트립 할인쿠폰 총정리</h1>
-            <p className="text-sm sm:text-lg mb-6 opacity-90 max-w-2xl mx-auto">2026년 4월 최신 할인코드 · 카드사별 최대 15% 할인 · 간편결제 할인 · 면세점 혜택까지 한눈에!</p>
+            <p className="text-sm sm:text-lg mb-6 opacity-90 max-w-2xl mx-auto">2026년 5월 최신 할인코드 · 카드사별 최대 15% 할인 · 간편결제 할인 · 면세점 혜택까지 한눈에!</p>
             <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow" className="cta-button text-base sm:text-lg px-8 py-4">
               지금 할인 받으러 가기 →
             </a>
@@ -50,8 +61,8 @@ const HomePage = () => {
       <main className="container mx-auto py-10">
         {/* 현재 사용 가능한 할인코드 */}
         <section className="mb-14">
-          <h2 className="section-title">📋 현재 사용 가능한 할인코드 (2026년 4월)</h2>
-          <p className="text-sm text-muted-foreground mb-6">아래 코드는 2026년 4월 기준이며, 매월 말일에 만료 후 새 코드로 갱신됩니다. 코드를 클릭하면 복사됩니다.</p>
+          <h2 className="section-title">📋 현재 사용 가능한 할인코드 (2026년 5월)</h2>
+          <p className="text-sm text-muted-foreground mb-6">아래 코드는 2026년 5월 기준이며, 매월 말일에 만료 후 새 코드로 갱신됩니다. 코드를 클릭하면 복사됩니다.</p>
           
           <div className="space-y-4">
             <CouponCode code="PACKMKTP5000" discount="5,000원 할인" minAmount="15만 원" note="해외 투어·티켓 전용" />
@@ -64,7 +75,7 @@ const HomePage = () => {
           <div className="info-card mt-6 border-l-4 border-warning">
             <h3 className="font-bold mb-2">⚠ 공통 유의사항</h3>
             <ul className="text-sm text-muted-foreground space-y-1">
-              <li>• 모든 할인코드는 4월 30일까지 등록 가능</li>
+              <li>• 모든 할인코드는 5월 31일까지 등록 가능</li>
               <li>• 코드 등록 시 쿠폰은 7일 이내 사용 필수</li>
               <li>• 유효기간 경과 시 동일 코드 재등록 불가</li>
               <li>• 다른 할인쿠폰과 중복 사용 불가 (1건당 1쿠폰)</li>
@@ -405,7 +416,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             <div className="info-card border-l-4 border-primary">
               <p className="text-sm mb-2">"일본 오사카 투어 15만원짜리 예약할 때 <strong>PACKMKTP5000</strong> 코드로 5,000원 할인 + 삼성카드 청구 할인 3만원까지 받아서 총 35,000원 절약했어요!"</p>
-              <p className="text-xs text-muted-foreground">— 김*진님, 2026년 3월 사용</p>
+              <p className="text-xs text-muted-foreground">— 김*진님, 2026년 4월 사용</p>
             </div>
             <div className="info-card border-l-4 border-secondary">
               <p className="text-sm mb-2">"토스페이 + 롯데카드 조합으로 제주도 리조트 예약 시 <strong>12만원 할인</strong> 받았습니다. 이 사이트에서 조합 추천 보고 따라했어요."</p>
@@ -413,11 +424,11 @@ const HomePage = () => {
             </div>
             <div className="info-card border-l-4 border-success">
               <p className="text-sm mb-2">"카카오페이 머니 자정 선착순으로 3,000원 할인 + 할인코드 1,000원 = <strong>소액이지만 알뜰하게</strong> 다낭 투어 예약 완료!"</p>
-              <p className="text-xs text-muted-foreground">— 박*현님, 2026년 4월 사용</p>
+              <p className="text-xs text-muted-foreground">— 박*현님, 2026년 5월 사용</p>
             </div>
             <div className="info-card border-l-4 border-warning">
               <p className="text-sm mb-2">"유럽 항공권 120만원 결제할 때 <strong>카드 즉시 15% 할인</strong>으로 18만원 절약. 추가로 면세점 BLACK PASS 혜택까지! 마이리얼트립 할인 극대화 꿀팁입니다."</p>
-              <p className="text-xs text-muted-foreground">— 정*아님, 2026년 3월 사용</p>
+              <p className="text-xs text-muted-foreground">— 정*아님, 2026년 4월 사용</p>
             </div>
           </div>
         </section>

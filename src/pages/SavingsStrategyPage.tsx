@@ -18,14 +18,25 @@ const SavingsStrategyPage = () => {
         <title>절약 전략·부가혜택 - 마이리얼트립 할인쿠폰</title>
         <meta name="description" content="마이리얼트립 면세점 제휴 혜택, 최저가 보장제, Trip Cash 포인트, 시즌별 할인 전략, 타 플랫폼 비교, 학생 할인, eSIM 할인까지 독보적 절약 정보를 총정리했습니다." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/savings-strategy" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="절약 전략·부가혜택 - 마이리얼트립 할인쿠폰" />
+        <meta property="og:description" content="마이리얼트립 면세점 제휴 혜택, 최저가 보장제, Trip Cash 포인트, 시즌별 할인 전략, 타 플랫폼 비교, 학생 할인, eSIM 할인까지 독보적 절약 정보를 총정리했습니다." />
+        <meta property="og:url" content="https://mrt.couponmonster.co.kr/savings-strategy" />
+        <meta property="og:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
+        <meta property="og:site_name" content="마이리얼트립 할인쿠폰" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="절약 전략·부가혜택 - 마이리얼트립 할인쿠폰" />
+        <meta name="twitter:description" content="마이리얼트립 면세점 제휴 혜택, 최저가 보장제, Trip Cash 포인트, 시즌별 할인 전략, 타 플랫폼 비교, 학생 할인, eSIM 할인까지 독보적 절약 정보를 총정리했습니다." />
+        <meta name="twitter:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "마이리얼트립 절약 전략·부가혜택 가이드 2026",
           "description": "면세점 제휴 혜택, 최저가 보장제, 시즌별 전략 등 독보적 절약 정보",
-          "datePublished": "2026-04-01",
-          "dateModified": "2026-04-07",
-          "author": { "@type": "Organization", "name": "쿠폰몬스터" }
+          "datePublished": "2026-05-01",
+          "dateModified": "2026-05-07",
+          "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" }
         })}</script>
       </Helmet>
 

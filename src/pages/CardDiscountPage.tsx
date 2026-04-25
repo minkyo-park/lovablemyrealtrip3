@@ -14,14 +14,25 @@ const CardDiscountPage = () => {
         <title>카드·결제 할인 비교 - 마이리얼트립 할인쿠폰</title>
         <meta name="description" content="마이리얼트립 삼성카드, 신한카드, KB국민카드, 롯데카드 등 카드사별 할인 비교와 카카오페이, 토스페이 간편결제 할인까지! 결제 금액대별 최적 조합을 확인하세요." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/card-discount" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="카드·결제 할인 비교 - 마이리얼트립 할인쿠폰" />
+        <meta property="og:description" content="마이리얼트립 삼성카드, 신한카드, KB국민카드, 롯데카드 등 카드사별 할인 비교와 카카오페이, 토스페이 간편결제 할인까지! 결제 금액대별 최적 조합을 확인하세요." />
+        <meta property="og:url" content="https://mrt.couponmonster.co.kr/card-discount" />
+        <meta property="og:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
+        <meta property="og:site_name" content="마이리얼트립 할인쿠폰" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="카드·결제 할인 비교 - 마이리얼트립 할인쿠폰" />
+        <meta name="twitter:description" content="마이리얼트립 삼성카드, 신한카드, KB국민카드, 롯데카드 등 카드사별 할인 비교와 카카오페이, 토스페이 간편결제 할인까지! 결제 금액대별 최적 조합을 확인하세요." />
+        <meta name="twitter:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
           "headline": "마이리얼트립 카드·결제 할인 비교 2026",
           "description": "카드사별, 간편결제별 마이리얼트립 할인 비교 및 최적 조합 가이드",
-          "datePublished": "2026-04-01",
-          "dateModified": "2026-04-07",
-          "author": { "@type": "Organization", "name": "쿠폰몬스터" }
+          "datePublished": "2026-05-01",
+          "dateModified": "2026-05-07",
+          "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" }
         })}</script>
       </Helmet>
 

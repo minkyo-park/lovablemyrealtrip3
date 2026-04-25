@@ -27,6 +27,17 @@ const HowToUsePage = () => {
         <title>사용방법·트러블슈팅 - 마이리얼트립 할인쿠폰</title>
         <meta name="description" content="마이리얼트립 할인코드 적용법, 쿠폰 등록 방법, 할인코드가 안 될 때 해결법, 결제 오류 트러블슈팅, FAQ까지 모두 정리했습니다." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/how-to-use" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="사용방법·트러블슈팅 - 마이리얼트립 할인쿠폰" />
+        <meta property="og:description" content="마이리얼트립 할인코드 적용법, 쿠폰 등록 방법, 할인코드가 안 될 때 해결법, 결제 오류 트러블슈팅, FAQ까지 모두 정리했습니다." />
+        <meta property="og:url" content="https://mrt.couponmonster.co.kr/how-to-use" />
+        <meta property="og:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
+        <meta property="og:site_name" content="마이리얼트립 할인쿠폰" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="사용방법·트러블슈팅 - 마이리얼트립 할인쿠폰" />
+        <meta name="twitter:description" content="마이리얼트립 할인코드 적용법, 쿠폰 등록 방법, 할인코드가 안 될 때 해결법, 결제 오류 트러블슈팅, FAQ까지 모두 정리했습니다." />
+        <meta name="twitter:image" content="https://mrt.couponmonster.co.kr/og-image.jpg" />
         <script type="application/ld+json">{JSON.stringify({
           "@context": "https://schema.org",
           "@type": "FAQPage",
