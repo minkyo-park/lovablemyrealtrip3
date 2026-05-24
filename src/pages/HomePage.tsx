@@ -1,5 +1,10 @@
 import { Helmet } from "react-helmet-async";
 import CouponCode from "@/components/CouponCode";
+import coupon1 from "@/assets/coupon-1.webp";
+import coupon2 from "@/assets/coupon-2.webp";
+import coupon3 from "@/assets/coupon-3.webp";
+import coupon4 from "@/assets/coupon-4.webp";
+import coupon5 from "@/assets/coupon-5.webp";
 import CTABanner from "@/components/CTABanner";
 import heroBanner from "@/assets/hero-banner.jpg";
 import discountCode from "@/assets/discount-code.png";
@@ -65,11 +70,11 @@ const HomePage = () => {
           <p className="text-sm text-muted-foreground mb-6">아래 코드는 2026년 5월 기준이며, 매월 말일에 만료 후 새 코드로 갱신됩니다. 코드를 클릭하면 복사됩니다.</p>
           
           <div className="space-y-4">
-            <CouponCode code="PACKMKTP5000" discount="5,000원 할인" minAmount="15만 원" note="해외 투어·티켓 전용" />
-            <CouponCode code="2MKTPCH5000" discount="5,000원 할인" minAmount="15만 원" note="해외 투어·티켓 전용" />
-            <CouponCode code="PACKMPT3000" discount="3,000원 할인" minAmount="10만 원" note="해외 투어·티켓 전용 · 선착순" />
-            <CouponCode code="PACKMKTP1000" discount="1,000원 할인" minAmount="5만 원" note="상시 쿠폰 · 해외 투어·티켓 전용" />
-            <CouponCode code="MKTPCH1000" discount="1,000원 할인" minAmount="5만 원" note="상시 쿠폰 · 해외 투어·티켓 전용" />
+            <CouponCode code="PACKMKTP5000" discount="5,000원 할인" minAmount="15만 원" note="해외 투어·티켓 전용" image={coupon1} />
+            <CouponCode code="2MKTPCH5000" discount="5,000원 할인" minAmount="15만 원" note="해외 투어·티켓 전용" image={coupon2} />
+            <CouponCode code="PACKMPT3000" discount="3,000원 할인" minAmount="10만 원" note="해외 투어·티켓 전용 · 선착순" image={coupon3} />
+            <CouponCode code="PACKMKTP1000" discount="1,000원 할인" minAmount="5만 원" note="상시 쿠폰 · 해외 투어·티켓 전용" image={coupon4} />
+            <CouponCode code="MKTPCH1000" discount="1,000원 할인" minAmount="5만 원" note="상시 쿠폰 · 해외 투어·티켓 전용" image={coupon5} />
           </div>
 
           <div className="info-card mt-6 border-l-4 border-warning">

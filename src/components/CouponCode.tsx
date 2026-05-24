@@ -7,9 +7,10 @@ interface CouponCodeProps {
   discount: string;
   minAmount: string;
   note?: string;
+  image?: string;
 }
 
-const CouponCode = ({ code, discount, minAmount, note }: CouponCodeProps) => {
+const CouponCode = ({ code, discount, minAmount, note, image }: CouponCodeProps) => {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
@@ -21,7 +22,11 @@ const CouponCode = ({ code, discount, minAmount, note }: CouponCodeProps) => {
 
   return (
     <div className="info-card flex flex-col sm:flex-row sm:items-center gap-4">
-      <div className="flex-1">
+      <div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
+      {image && (
+        <img src={image} alt={`마이리얼트립 ${code} ${discount} 쿠폰 이미지`} loading="lazy" width={1254} height={1254} className="w-24 sm:w-40 md:w-44 aspect-square object-cover rounded-lg shrink-0" />
+      )}
+      <div className="flex-1 min-w-0">
         <div className="flex items-center gap-3 flex-wrap">
           <span className="coupon-code" onClick={handleCopy}>
             {code}
@@ -36,6 +41,7 @@ const CouponCode = ({ code, discount, minAmount, note }: CouponCodeProps) => {
           <span className="text-xs text-muted-foreground">최소 {minAmount}</span>
         </div>
         {note && <p className="text-xs text-muted-foreground mt-1">{note}</p>}
+      </div>
       </div>
       <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow" className="cta-button text-sm flex-shrink-0">
         할인코드 적용 →
