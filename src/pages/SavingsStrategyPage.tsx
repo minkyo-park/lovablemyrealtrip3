@@ -9,7 +9,7 @@ import priceCompare from "@/assets/price-compare.png";
 import esim from "@/assets/esim.png";
 import studentDiscount from "@/assets/student-discount.png";
 
-const AFFILIATE_LINK = "https://myrealt.rip/XdEQf5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 const SavingsStrategyPage = () => {
   return (

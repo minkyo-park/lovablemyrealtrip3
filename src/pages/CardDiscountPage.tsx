@@ -5,7 +5,7 @@ import cardComparison from "@/assets/card-comparison.png";
 import mobilePayment from "@/assets/mobile-payment.png";
 import priceCompare from "@/assets/price-compare.png";
 
-const AFFILIATE_LINK = "https://myrealt.rip/XdEQf5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 const CardDiscountPage = () => {
   return (

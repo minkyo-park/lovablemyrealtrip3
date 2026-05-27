@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const AFFILIATE_LINK = "https://myrealt.rip/XdEQf5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 const Footer = () => (
   <footer className="bg-foreground text-background/80 mt-16">

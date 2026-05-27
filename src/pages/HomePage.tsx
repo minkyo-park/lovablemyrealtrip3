@@ -17,7 +17,7 @@ import mobilePayment from "@/assets/mobile-payment.png";
 import priceCompare from "@/assets/price-compare.png";
 import { Link } from "react-router-dom";
 
-const AFFILIATE_LINK = "https://myrealt.rip/XdEQf5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 const HomePage = () => {
   return (

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const AFFILIATE_LINK = "https://myrealt.rip/XdEQf5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 interface CouponCodeProps {
   code: string;

@@ -6,7 +6,7 @@ import howToGuide from "@/assets/how-to-guide.png";
 import troubleshoot from "@/assets/troubleshoot.png";
 import faqImg from "@/assets/faq.png";
 
-const AFFILIATE_LINK = "https://myrealt.rip/XdEQf5";
+const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 
 const HowToUsePage = () => {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
