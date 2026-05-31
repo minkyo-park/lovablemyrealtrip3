@@ -30,8 +30,8 @@ const CardDiscountPage = () => {
           "@type": "Article",
           "headline": "마이리얼트립 카드·결제 할인 비교 2026",
           "description": "카드사별, 간편결제별 마이리얼트립 할인 비교 및 최적 조합 가이드",
-          "datePublished": "2026-05-01",
-          "dateModified": "2026-05-07",
+          "datePublished": "2026-06-01",
+          "dateModified": "2026-06-07",
           "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" }
         })}</script>
       </Helmet>

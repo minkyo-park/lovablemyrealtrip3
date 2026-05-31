@@ -8,16 +8,18 @@ interface CouponCodeProps {
   minAmount: string;
   note?: string;
   image?: string;
+  href?: string;
 }
 
-const CouponCode = ({ code, discount, minAmount, note, image }: CouponCodeProps) => {
+const CouponCode = ({ code, discount, minAmount, note, image, href }: CouponCodeProps) => {
   const [copied, setCopied] = useState(false);
+  const link = href ?? AFFILIATE_LINK;
 
   const handleCopy = () => {
     navigator.clipboard.writeText(code);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
-    window.open(AFFILIATE_LINK, "_blank", "noopener,noreferrer");
+    window.open(link, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -43,7 +45,7 @@ const CouponCode = ({ code, discount, minAmount, note, image }: CouponCodeProps)
         {note && <p className="text-xs text-muted-foreground mt-1">{note}</p>}
       </div>
       </div>
-      <a href={AFFILIATE_LINK} target="_blank" rel="noopener noreferrer nofollow" className="cta-button text-sm flex-shrink-0">
+      <a href={link} target="_blank" rel="noopener noreferrer nofollow" className="cta-button text-sm flex-shrink-0">
         할인코드 적용 →
       </a>
     </div>
