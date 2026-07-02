@@ -41,7 +41,7 @@ const Footer = () => (
       </div>
       <div className="border-t border-background/20 pt-6 text-center text-xs text-background/50">
         <p>© 2026 마이리얼트립 할인쿠폰. 본 사이트는 마이리얼트립 제휴 파트너로서 일부 링크를 통해 수수료를 받을 수 있습니다.</p>
-        <p className="mt-1">최종 업데이트: 2026년 6월 | 마이리얼트립 고객센터: 1670-8208</p>
+        <p className="mt-1">최종 업데이트: 2026년 7월 | 마이리얼트립 고객센터: 1670-8208</p>
       </div>
     </div>
   </footer>
