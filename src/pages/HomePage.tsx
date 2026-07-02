@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import CouponCode from "@/components/CouponCode";
 import coupon1 from "@/assets/coupon-1.webp";
 import coupon2 from "@/assets/coupon-2.webp";
@@ -22,7 +22,7 @@ const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 const HomePage = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>마이리얼트립 할인쿠폰</title>
         <meta name="description" content="매달 갱신되는 마이리얼트립 7월 할인쿠폰 정보. 적용 가능한 상품, 사용 조건, 유효기간까지 할인코드별로 꼼꼼하게 정리했습니다. 7월 여행 경비 확 줄이는 마이리얼트립 쿠폰, 여기서 받아가세요." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/" />
@@ -47,7 +47,7 @@ const HomePage = () => {
           "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" },
           "publisher": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰", "url": "https://mrt.couponmonster.co.kr" }
         })}</script>
-      </Helmet>
+      </Head>
 
       {/* Hero */}
       <section className="hero-section relative">

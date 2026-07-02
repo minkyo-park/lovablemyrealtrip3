@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import { useState } from "react";
 import CTABanner from "@/components/CTABanner";
 import howtoHero from "@/assets/howto-hero.jpg";
@@ -23,7 +23,7 @@ const HowToUsePage = () => {
 
   return (
     <>
-      <Helmet>
+      <Head>
         <title>사용방법·트러블슈팅 - 마이리얼트립 할인쿠폰</title>
         <meta name="description" content="마이리얼트립 할인코드 적용법, 쿠폰 등록 방법, 할인코드가 안 될 때 해결법, 결제 오류 트러블슈팅, FAQ까지 모두 정리했습니다." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/how-to-use" />
@@ -47,7 +47,7 @@ const HowToUsePage = () => {
             "acceptedAnswer": { "@type": "Answer", "text": f.a }
           }))
         })}</script>
-      </Helmet>
+      </Head>
 
       <section className="hero-section relative">
         <img src={howtoHero} alt="마이리얼트립 할인코드 사용방법" width={1920} height={640} className="w-full h-40 sm:h-56 md:h-72 object-cover opacity-40" />

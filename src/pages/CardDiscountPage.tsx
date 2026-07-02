@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import CTABanner from "@/components/CTABanner";
 import cardHero from "@/assets/card-hero.jpg";
 import cardComparison from "@/assets/card-comparison.png";
@@ -10,7 +10,7 @@ const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 const CardDiscountPage = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>카드·결제 할인 비교 - 마이리얼트립 할인쿠폰</title>
         <meta name="description" content="마이리얼트립 삼성카드, 신한카드, KB국민카드, 롯데카드 등 카드사별 할인 비교와 카카오페이, 토스페이 간편결제 할인까지! 결제 금액대별 최적 조합을 확인하세요." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/card-discount" />
@@ -34,7 +34,7 @@ const CardDiscountPage = () => {
           "dateModified": "2026-06-07",
           "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" }
         })}</script>
-      </Helmet>
+      </Head>
 
       <section className="hero-section relative">
         <img src={cardHero} alt="마이리얼트립 카드 결제 할인 비교" width={1920} height={640} className="w-full h-40 sm:h-56 md:h-72 object-cover opacity-40" />

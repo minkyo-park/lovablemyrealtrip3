@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+import { Head } from "vite-react-ssg";
 import CTABanner from "@/components/CTABanner";
 import savingsHero from "@/assets/savings-hero.jpg";
 import dutyFree from "@/assets/duty-free.png";
@@ -14,7 +14,7 @@ const AFFILIATE_LINK = "https://myrealt.rip/aRT258";
 const SavingsStrategyPage = () => {
   return (
     <>
-      <Helmet>
+      <Head>
         <title>절약 전략·부가혜택 - 마이리얼트립 할인쿠폰</title>
         <meta name="description" content="마이리얼트립 면세점 제휴 혜택, 최저가 보장제, Trip Cash 포인트, 시즌별 할인 전략, 타 플랫폼 비교, 학생 할인, eSIM 할인까지 독보적 절약 정보를 총정리했습니다." />
         <link rel="canonical" href="https://mrt.couponmonster.co.kr/savings-strategy" />
@@ -38,7 +38,7 @@ const SavingsStrategyPage = () => {
           "dateModified": "2026-06-07",
           "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" }
         })}</script>
-      </Helmet>
+      </Head>
 
       <section className="hero-section relative">
         <img src={savingsHero} alt="마이리얼트립 절약 전략" width={1920} height={640} className="w-full h-40 sm:h-56 md:h-72 object-cover opacity-40" />

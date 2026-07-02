@@ -1,6 +1,6 @@
+import type { RouteRecord } from "vite-react-ssg";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HelmetProvider } from "react-helmet-async";
+import { Outlet } from "react-router-dom";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ScrollToTop from "@/components/ScrollToTop";
 import Header from "@/components/Header";
@@ -13,25 +13,31 @@ import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <HelmetProvider>
+function RootLayout() {
+  return (
+    <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <BrowserRouter>
-          <ScrollToTop />
-          <Header />
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/card-discount" element={<CardDiscountPage />} />
-            <Route path="/how-to-use" element={<HowToUsePage />} />
-            <Route path="/savings-strategy" element={<SavingsStrategyPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-        </BrowserRouter>
+        <ScrollToTop />
+        <Header />
+        <Outlet />
+        <Footer />
       </TooltipProvider>
-    </HelmetProvider>
-  </QueryClientProvider>
-);
+    </QueryClientProvider>
+  );
+}
 
-export default App;
+export const routes: RouteRecord[] = [
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { index: true, element: <HomePage /> },
+      { path: "card-discount", element: <CardDiscountPage /> },
+      { path: "how-to-use", element: <HowToUsePage /> },
+      { path: "savings-strategy", element: <SavingsStrategyPage /> },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
+];
+
+export default routes;
