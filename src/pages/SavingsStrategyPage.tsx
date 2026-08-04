@@ -35,7 +35,7 @@ const SavingsStrategyPage = () => {
           "headline": "마이리얼트립 절약 전략·부가혜택 가이드 2026",
           "description": "면세점 제휴 혜택, 최저가 보장제, 시즌별 전략 등 독보적 절약 정보",
           "datePublished": "2026-06-01",
-          "dateModified": "2026-06-07",
+          "dateModified": "2026-08-04",
           "author": { "@type": "Organization", "name": "마이리얼트립 할인쿠폰" }
         })}</script>
       </Head>
